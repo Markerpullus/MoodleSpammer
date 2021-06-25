@@ -27,8 +27,8 @@ A python script that spams moodle quizzes to give you higher grades🚀
 	]
 }
 ```
-`id`: lesson id
-`pid`: page id of the first question of the quiz
-`sesskey`: moodle session key
-`answers.answer`: correct answer id
-`answers.tf_question`: is the question a t/f question
+`id`: lesson id  
+`pid`: page id of the first question of the quiz  
+`sesskey`: moodle session key  
+`answers.answer`: correct answer id  
+`answers.tf_question`: is the question a t/f question  
