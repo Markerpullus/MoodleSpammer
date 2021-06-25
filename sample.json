@@ -1,0 +1,23 @@
+{
+	"id": 2619,
+	"pid": 8291,
+	"sesskey": "PYTS6vu8QP",
+	"answers": [
+		{
+			"answer": 18979,
+			"tf_question": false
+		},
+		{
+			"answer": 18983,
+			"tf_question": false
+		},
+		{
+			"answer": 18987,
+			"tf_question": true
+		},
+		{
+			"answer": 18978,
+			"tf_question": true
+		}
+	]
+}
