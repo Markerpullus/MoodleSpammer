@@ -22,7 +22,7 @@ A python script that spams moodle quizzes to give you higher grades🚀
 		},
 		{
 			"answer": 18978,
-			"tf_question": true
+			"tf_question": false
 		}
 	]
 }
