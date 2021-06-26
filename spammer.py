@@ -26,17 +26,6 @@ def _continue(s, id, pid, sesskey, is_tf, ansid):
 	if "That's right" in r.text:
 		print("Correct")
 
-s = requests.Session()
-s.cookies.set("MoodleSessionipe1", "d341af4751c62446c9fc07b93ebfe1a8")
-s.headers.update({"Content-Type": "application/x-www-form-urlencoded",
-	"Upgrade-Insecure-Requests": "1",
-	"Sec-Fetch-Site": "same-origin",
-	"Sec-Fetch-Mode": "navigate",
-	"Sec-Fetch-User": "?1",
-	"Sec-Fetch-Dest": "document"})
-
-#s.proxies.update({"https": "http://127.0.0.1:8080"})
-
 attempts = int(args.attempts)
 
 f = open(args.data_file)
@@ -47,6 +36,15 @@ sesskey = str(data["sesskey"])
 answers = []
 for ans in data["answers"]:
 	answers.append([str(ans["answer"]), ans["tf_question"]])
+
+s = requests.Session()
+s.cookies.set("MoodleSessionipe1", data["moodlesessionid"])
+s.headers.update({"Content-Type": "application/x-www-form-urlencoded",
+	"Upgrade-Insecure-Requests": "1",
+	"Sec-Fetch-Site": "same-origin",
+	"Sec-Fetch-Mode": "navigate",
+	"Sec-Fetch-User": "?1",
+	"Sec-Fetch-Dest": "document"})
 
 for i in range(attempts):
 	tmp = pid
