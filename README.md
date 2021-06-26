@@ -41,4 +41,4 @@ A python script that spams moodle quizzes to give you higher grades🚀
 * Find `continue.php`, go down to form data, and you will find lesson id, pageid, sesskey, and answerid  
 * Keep answering the questions and record the correct answer ids and if it is a t/f question  
 * Go to application tab and find the moodle session id cookie  
-** The moodle session cookie name may vary across different moodle courses, in my case it is MoodleSessionipe1 **
+__The moodle session cookie name may vary across different moodle courses, in my case it is MoodleSessionipe1__
